@@ -206,7 +206,7 @@ class FetchExample extends Component {
   async componentDidMount() {
     const response = await fetch('https://whcb-react-native-api.glitch.me/fetch')
     const responseJson = await response.json()
-    await this.setState({ data: responseJson.data })
+    this.setState({ data: responseJson.data })
   }
 
   render() {
